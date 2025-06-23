@@ -1,0 +1,30 @@
+Aryan Beenu Panikar
+
+Task 1 -  Scan Your Local Network for Open Ports
+
+Step 1: Download Nmap
+	sudo apt install nmap
+
+Step 2: Find local IP range (192.168.xx.xx/16)
+
+Step 3: Do TCP SYN Scan 
+	nmap -sS 192.168.xx.xx/16	
+	
+	Nmap scan report for _gateway (192.168.xx.xx)
+	Host is up (0.0038s latency).
+	Not shown: 991 filtered ports
+	PORT     STATE  SERVICE
+	80/tcp   open   http
+	443/tcp  open   https
+	1900/tcp open   upnp
+	8080/tcp open   http-proxy
+	8443/tcp open   https-alt
+
+	
+Step 4: Analyse Open Ports
+	
+	80, 443: For HTTP & HTTPS Protocols
+	1900: Universal Plug and Play port is used for device discovery and enables devices on local network to automatically find, connect and control each other. It is said to be accessable in internal network only and not from the internet
+	8080: Works as an alt for HTTP 80 port, used for proxy service for dev or test env.
+	8443: Alt for HTTPS 443 port, is an alt when 443 not available.
+	

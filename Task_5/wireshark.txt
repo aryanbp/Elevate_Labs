@@ -1,0 +1,42 @@
+
+Aryan Beenu Panikar
+
+Task 5 : Capture and Analyze Network Traffic Using Wireshark.
+
+Step 1: Install Wireshark
+	sudo apt install wireshark
+	
+Step 2: Open Wireshark with sudo permission
+	sudo wireshark
+
+Step 3: Capture wlpls Traffic (Wifi) & Save File
+
+Step 4: Analyse capture packets and understand protocols
+	
+	TCP,UDP,ARP,DNS
+	
+	TCP: Trasmission Control Protocol 
+		Is connection oriented protocol.
+		Uses 3 way handshake to ensure reliable communication of data.
+		Ensures Data Integrity and delivery order.
+		Used at Transport layer
+		
+	UDP: User Datagram Protocol
+		Is connectionless communication protocol.
+		Sends message in network without any dedicated connection beforehand.
+		Know for speed and efficiency.
+		Suitable for application where occasional packet loss is acceptable like streaming,gaming and so on.
+		Also used at Transpot Layer i.e Layer 4	
+		
+	ARP: Address Resolution Protocol
+		Used to resolve MAC address of a device on network
+		Used at the Data link layer 
+		Important for communication and routing in local network
+		
+	DNS: Domain Name System
+		Every device on the internet / network has an ip address to identify itself. DNS converts this IP to Human Readable Form so that humans can access the resources easily.
+		It is an application layer protocol
+		And also convert human readable format back to IP 
+		
+
+The network communication happens in layer format i.e the TCP/IP communication and these protocols are part of those layer helping the data to travel from one location to another in a efficient,secure and reliable way.
